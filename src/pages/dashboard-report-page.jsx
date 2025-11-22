@@ -13,7 +13,7 @@ export default function DashboardReport({prop}) {
                 <p className='text-xl font-bold'> Reports </p>
                 <p></p>
             </header>
-            <DashBoardReportBalanceCard transactionHistory={prop.map(el => {
+            <DashBoardReportBalanceCard transactionHistory={prop?.map(el => {
                 return el.transaction_history
             })} />
             <DashboardReportOperationsList />
