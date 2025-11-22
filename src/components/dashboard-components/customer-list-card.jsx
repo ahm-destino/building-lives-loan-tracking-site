@@ -28,7 +28,6 @@ export default function CustomerListcard({prop}){
                             <hr />
                             <button onClick={(()=>{
                                 navigate('/view-profile',{state: el})
-                                window.location.href = 'http://localhost:5173/view-profile'
                                 
                             })} className="bg-blue-200/30 hover:bg-blue-200/50 text-slate-700 text-[16px] font-medium  p-[10px] rounded-[12px]"> View Profile </button>
                         </div> 
