@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function DashboardReportOperationsList() {
     const navigate = useNavigate()
-    const customersInfo = JSON.parse(localStorage.getItem('customerInfo'))
+    const customersInfo = JSON.parse(localStorage.getItem('customerInfo')) || []
     console.log(customersInfo);
 
     
