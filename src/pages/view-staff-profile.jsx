@@ -5,8 +5,8 @@ import StaffCustomersOperations from "../components/staff-profile-components/ope
 import { useNavigate, useLocation } from "react-router-dom"
 export default function Staffprofile(){
 
-    const staffInfo = JSON.parse(localStorage.getItem('staffInfo'))
-    const customersInfo = JSON.parse(localStorage.getItem('customerInfo'))
+    const staffInfo = JSON.parse(localStorage.getItem('staffInfo')) || []
+    const customersInfo = JSON.parse(localStorage.getItem('customerInfo')) || []
 
     const navigate = useNavigate()
     const location = useLocation()
