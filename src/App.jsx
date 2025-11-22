@@ -116,8 +116,8 @@ function App() {
   // localStorage.setItem('staffInfo', JSON.stringify(staffInfo)) 
 
 
-   const customersInfo = JSON.parse(localStorage.getItem('customerInfo'))
-   const staffInfo = JSON.parse(localStorage.getItem('staffInfo'))
+   const customersInfo = JSON.parse(localStorage.getItem('customerInfo')) || []
+   const staffInfo = JSON.parse(localStorage.getItem('staffInfo')) || []
 
   // console.log(customersInfo);
   
