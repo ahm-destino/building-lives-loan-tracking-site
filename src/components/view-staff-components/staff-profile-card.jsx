@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
 export default function StaffOverview(){
     const navigate = useNavigate()
-    const staffInfo = JSON.parse(localStorage.getItem('staffInfo'))
-    const customersInfo = JSON.parse(localStorage.getItem('customerInfo'))
+    const staffInfo = JSON.parse(localStorage.getItem('staffInfo')) || []
+    const customersInfo = JSON.parse(localStorage.getItem('customerInfo')) || []
     
     function getTotalAmountGivenByStaff(staffName) {
 
